@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("nama");
             $table->string("tahun");
             $table->string("lokasi");
+            $table->string("status");
             $table->string("nilai");
         });
     }

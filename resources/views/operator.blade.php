@@ -31,7 +31,7 @@
             <div class="col-9">
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Data Mahasiswa</a>
+                    <a href="{{ route('show-menu-data-mahasiswa') }}">Data Mahasiswa</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>

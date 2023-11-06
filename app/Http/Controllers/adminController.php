@@ -6,6 +6,7 @@ use App\Models\Operator;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class adminController extends Controller
 {
@@ -19,6 +20,8 @@ class adminController extends Controller
             return redirect('/dashboard/mahasiswa');
         } elseif (Auth::User()->role == 'departemen') {
             return redirect('/dashboard/departemen');
+        } elseif (Auth::User()->role == 'guest') {
+            return redirect('/dashboard/guest');
         }
     }
     public function operator()
@@ -50,6 +53,16 @@ class adminController extends Controller
     public function departemen()
     {
         return view('departemen');
+    }
+    public function guest()
+    {
+        $data = DB::table("users")
+            ->join("mahasiswa", "users.id", "=", "mahasiswa.nim")
+            ->select("users.*", "mahasiswa.*")
+            ->where("users.id", "=", auth()->user()->id)
+            ->first();
+        $id = auth()->user()->id;
+        return view('guest', compact('data', 'id'));
     }
     public function page_error()
     {

@@ -33,19 +33,19 @@
             <div class="col-9">
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">IRS</a>
+                    <a href="/dashboard/mahasiswa/IRS">IRS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">KHS</a>
+                    <a href="/dashboard/mahasiswa/KHS">KHS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">PKL</a>
+                    <a href="/dashboard/mahasiswa/PKL">PKL</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Skripsi</a>
+                    <a href="/dashboard/mahasiswa/skripsi">Skripsi</a>
                 </div>
 
             </div>
