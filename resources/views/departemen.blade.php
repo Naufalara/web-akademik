@@ -31,25 +31,24 @@
             <div class="col-9">
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Data Mahasiswa</a>
+                    <a href="/dashboard/mahasiswa_perwalian">Mahasiswa Perwalian</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">IRS</a>
+                    <a href="{{ route('rekappkl') }}">Rekap PKL</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">KHS</a>
+                    <a href="#">Rekap Skripsi</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">PKL</a>
+                    <a href="{{ route('rekappkl') }}">List PKL</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Skripsi</a>
+                    <a href="#">List Skripsi</a>
                 </div>
-
             </div>
         </div>
     </div>

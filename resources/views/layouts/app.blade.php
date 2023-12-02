@@ -7,8 +7,13 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    {{-- ajax --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title> {{ config('app.name', 'Laravel') }} </title>
+
+    <!-- jQuery -->
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -19,6 +24,7 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 
 <body>
@@ -83,10 +89,17 @@
                 </div>
             </nav>
             @endif
+            @if (Session::has('success'))
+                <div class="alert alert-success">
+                    {{ Session::get('success') }}
+                </div>
+            @endif
             <main class="py-4">
                 @yield('content')
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
             </main>
         </div>
+        @livewireScripts
     </body>
 
     </html>

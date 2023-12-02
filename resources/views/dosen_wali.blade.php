@@ -24,30 +24,30 @@
                         </ul>
                     </div>
                     <div class="card-footer text-center py-2">
-                        <a class="btn btn-link btn-sm" href="{{ route }}">View Profile </a>
+                        <a class="btn btn-link btn-sm" href="#">View Profile </a>
                     </div>
                 </div>
             </div>
             <div class="col-9">
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Mahasiswa Perwalian</a>
+                    <a href="/dashboard/mahasiswa_perwalian">Mahasiswa Perwalian</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">IRS</a>
+                    <a href="/dashboard/verifikasi_irs">IRS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">KHS</a>
+                    <a href="/dashboard/verifikasi_khs">KHS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">PKL</a>
+                    <a href="/dashboard/verifikasi_pkl">PKL</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Skripsi</a>
+                    <a href="/dashboard/verifikasi_skripsi">Skripsi</a>
                 </div>
 
             </div>

@@ -9,13 +9,14 @@ class pkl extends Model
 {
     use HasFactory;
     protected $table = 'pkl';
-
+    protected $primaryKey = 'no';
     protected $fillable = [
         'nim',
-        'status',
-        'nama',
+        'status_pkl',
         'tahun',
-        'lokasi',
+        'scan_berita',
         'nilai',
+        'status',
     ];
+    protected $guarded = [];
 }

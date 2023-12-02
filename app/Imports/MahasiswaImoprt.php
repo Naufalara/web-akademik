@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\User;
+use App\Models\Mahasiswa; // Add this line to import the Mahasiswa model
 use Maatwebsite\Excel\Concerns\ToModel;
 
 class MahasiswaImoprt implements ToModel
@@ -16,9 +17,11 @@ class MahasiswaImoprt implements ToModel
     {
         return new User([
             'id' => $row[0],
-            'name' => $row[1],
-            'email' => $row[2],
-            'password' => $row[3],
+            'nip' => $row[1],
+            'name' => $row[2],
+            'email' => $row[3],
+            'password' => $row[4],
+            'role' => $row[5],
         ]);
     }
 }

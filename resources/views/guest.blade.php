@@ -5,17 +5,28 @@
         <div class="row d-flex dashboard">
             <form action="/dashboard/guest/{{ $id }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                {{-- @method('put') --}}
                 <div>
                     <label>NIM</label>
                     <input type="text" class="form-control" disabled value="{{ $id }}">
                 </div>
                 <div>
+                    <label>NIP</label>
+                    <input type="text" class="form-control" disabled value="{{ $data->nip }}">
+                </div>
+                <div>
+                    <label>Angkatan</label>
+                    <input type="text" class="form-control" disabled value="{{ date('Y') }}">
+                </div>
+
+                <div>
                     <label>Nama</label>
-                    <input type="text" class="form-control" value="{{ old('nama') }}" id="nama" name="nama">
-                    @error('nama')
-                        <div class="alert alert-danger">{{ $message }}</div>
-                    @enderror
+                    <input type="text" class="form-control" disabled value="{{ $data->nama }}" id="nama"
+                        name="nama">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" class="form-control" disabled value="{{ $data->email }}" id="email"
+                        name="email">
                 </div>
                 <div>
                     <label>Alamat</label>
@@ -33,7 +44,8 @@
                 </div>
                 <div>
                     <label>Provinsi</label>
-                    <input type="text" class="form-control" value="{{ old('provinsi') }}" id="provinsi" name="provinsi">
+                    <input type="text" class="form-control" value="{{ old('provinsi') }}" id="provinsi"
+                        name="provinsi">
                     @error('provinsi')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -43,7 +55,7 @@
                     <select class="form-select" id="jalur_masuk" name="jalur_masuk">
                         <option value="">Pilih Jalur Masuk</option>
                         <option value="SNMPTN" {{ old('jalur_masuk') == 'SNMPTN' ? 'selected' : '' }}>SNMPTN</option>
-                        <option value="SNMPTN" {{ old('jalur_masuk') == 'SNMPTN' ? 'selected' : '' }}>SNMPTN</option>
+                        <option value="SBMPTN" {{ old('jalur_masuk') == 'SBMPTN' ? 'selected' : '' }}>SBMPTN</option>
                         <option value="Mandiri" {{ old('jalur_masuk') == 'Mandiri' ? 'selected' : '' }}>Mandiri</option>
                         <option value="Lainnya" {{ old('jalur_masuk') == 'Lainnya' ? 'selected' : '' }}>Lainnya</option>
 
@@ -65,6 +77,22 @@
                     <input type="file" class="form-control" value="{{ old('foto') }}" id="foto" name="foto"
                         onchange="previewImage()">
                     @error('foto')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" class="form-control" value="{{ old('password') }}" id="password"
+                        name="password">
+                    @error('password')
+                        <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" value="{{ old('password_confirmation') }}"
+                        id="password_confirmation" name="password_confirmation">
+                    @error('password_confirmation')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>

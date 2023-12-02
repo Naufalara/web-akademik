@@ -14,33 +14,11 @@
                         </ul>
                     </div>
                     <div class="card-footer text-center py-2">
-                        <a class="btn btn-link btn-sm" href="profile">View Profile </a>
+                        <a class="btn btn-link btn-sm" href="/dashboard/mahasiswa">Back</a>
                     </div>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="button-nav" id="button3">
-                    <div id="circle"></div>
-                    <a href="#">Mahasiswa Perwalian</a>
-                </div>
-                <div class="button-nav" id="button3">
-                    <div id="circle"></div>
-                    <a href="#">IRS</a>
-                </div>
-                <div class="button-nav" id="button3">
-                    <div id="circle"></div>
-                    <a href="#">KHS</a>
-                </div>
-                <div class="button-nav" id="button3">
-                    <div id="circle"></div>
-                    <a href="#">PKL</a>
-                </div>
-                <div class="button-nav" id="button3">
-                    <div id="circle"></div>
-                    <a href="#">Skripsi</a>
-                </div>
 
-            </div>
         </div>
     </div>
 @endsection

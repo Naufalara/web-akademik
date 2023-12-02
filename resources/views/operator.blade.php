@@ -31,23 +31,30 @@
             <div class="col-9">
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="{{ route('show-menu-data-mahasiswa') }}">Data Mahasiswa</a>
+                    <a href="{{ route('show-menu-data-mahasiswa') }}">Input Data Mahasiswa</a>
+                </div>
+                <div>
+
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">IRS</a>
+                    <a href="/dashboard/mahasiswa_perwalian">Data Mahasiswa</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">KHS</a>
+                    <a href="/dashboard/verifikasi_irs">IRS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">PKL</a>
+                    <a href="/dashboard/verifikasi_khs">KHS</a>
                 </div>
                 <div class="button-nav" id="button3">
                     <div id="circle"></div>
-                    <a href="#">Skripsi</a>
+                    <a href="/dashboard/verifikasi_pkl">PKL</a>
+                </div>
+                <div class="button-nav" id="button3">
+                    <div id="circle"></div>
+                    <a href="/dashboard/verifikasi_skripsi">Skripsi</a>
                 </div>
 
             </div>

@@ -14,8 +14,6 @@
                             <li class="profil-show">
                                 <label for="nip">NIM : </label>
                                 <span>{{ auth()->user()->id }}</span>
-
-
                             </li>
                             <li class="profil-show">
                                 <label for="nama">Nama : </label>
@@ -24,8 +22,7 @@
                         </ul>
                     </div>
                     <div class="card-footer text-center py-2">
-                        <a class="btn btn-link btn-sm"
-                            href="{{ route('mahasiswa_index', ['id' => auth()->user()->id]) }}">View
+                        <a class="btn btn-link btn-sm" href="/dashboard/mahasiswa/view-profile">View
                             Profile </a>
                     </div>
                 </div>
