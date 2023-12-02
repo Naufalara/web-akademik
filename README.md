@@ -1,1 +1,1 @@
-Mabar bang
+Valo dulu
